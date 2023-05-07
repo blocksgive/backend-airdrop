@@ -3,7 +3,7 @@ import sys
 import click
 import pendulum
 from deploy_tools.cli import (
-    auto_nonce_option,
+    
     connect_to_json_rpc,
     gas_option,
     gas_price_option,
@@ -103,7 +103,6 @@ def proof(address: bytes, airdrop_file_name: str) -> None:
 @gas_option
 @gas_price_option
 @nonce_option
-@auto_nonce_option
 @jsonrpc_option
 @click.option(
     "--token-address",
